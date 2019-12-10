@@ -1,0 +1,26 @@
+<form {{action 'save' on="submit"}}>
+  <span>Amount: </span>
+  {{input type="number" value=amount id="amount"}} USD
+  <input type="submit" value="New Invoice" class="btn" />
+  <input type="text" value={{filter}} onkeyup={{action "filter" value="target.value"}} id="filter"
+    placeholder="Search..." />
+</form>
+
+{{#light-table table as |t|}}
+{{t.head}}
+{{#t.body canExpand=true as |body|}}
+
+{{!-- if the table is empty --}}
+{{#if table.isEmpty}}
+{{#body.no-data}}
+No Invoices are found ;-(
+{{/body.no-data}}
+{{/if}}
+{{!-- -- -- --}}
+
+{{/t.body}}
+{{/light-table}}
+
+
+<span>Total Amount: {{totalAmount}} </span>USD
+{{outlet}}

@@ -1,0 +1,69 @@
+.main-content {
+  font-family: system-ui;
+  text-align: center;
+  display: table;
+
+  table thead {
+    background: #dd6a58;
+    line-height: 30px;
+  }
+
+  table thead th {
+    color: white;
+    text-align: center !important;
+    font-weight: normal !important;
+  }
+
+  table tbody td {
+    text-align: center !important;
+    line-height: 30px;
+    border-width: 0 0 1px;
+    border-color: #dadada;
+    border-width: 0 0 1px;
+    border-style: solid;
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .ember-light-table {
+    width: unset !important;
+    padding: 10px 30px 50px;
+  }
+
+  .ember-light-table .lt-body-wrap {
+    overflow-x: hidden !important;
+  }
+
+  input#amount {
+    line-height: 23px;
+    font-size: 22px;
+    width: 120px;
+  }
+
+  .btn {
+    background: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-left: 20px;
+  }
+
+  span {
+    font-size: 22px;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  #filter {
+    position: absolute;
+    right: 80px;
+    line-height: 20px;
+    font-size: 16px;
+    width: 100px;
+  }
+}
